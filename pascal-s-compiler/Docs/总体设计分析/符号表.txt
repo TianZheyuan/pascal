@@ -1,0 +1,26 @@
+// 符号表
+struct symbol_table
+{
+	// ...
+}
+
+// 符号表中的表项
+struct symbol
+{
+	// ...
+}
+
+// 创建新的符号表
+maketable(struct symbol_table* previous) // 之前的符号表
+
+// 创建新的条目
+enter(struct symbol_table* table, char* name, symbol_type type, unsigned int offset) // 表、变量名字、类型、存储地址
+
+// 创建新的指向过程的条目
+enterproc(struct symbol_table* table, char* name, symbol_type type, struct symbol_table* newtable) // 表、过程名字、过程类型、指向其符号表的指针
+
+// 填写符号表表头
+addtheader(struct symbol_table* table, unsigned int num, unsigned int pwth, symbol_type type, unsigned int width) // 表、参数个数、参数空间大小、返回值类型、局部数据区的总宽度
+
+// 数据区的总宽度width
+addwidth(struct symbol_table* table, unsigned int width) // 表、总宽度

@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "istream": "c",
+        "iostream": "cpp",
+        "algorithm": "c",
+        "limits": "c",
+        "iosfwd": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "utility": "c",
+        "xlocale": "cpp"
+    }
+}
